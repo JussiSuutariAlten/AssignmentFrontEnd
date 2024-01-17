@@ -1,0 +1,12 @@
+<dialog #dialog open="true" class="dialog-box">
+  <div class="dialog-main">
+    <div class="dialog-header">
+      <h3>{{titleSignal()}}</h3>
+      <span class="spacer"></span>
+      <button id="close" class="close-button" (click)="pressCloseButton()">🗙</button>
+    </div>
+    <div class="dialog-body">
+    <ng-template #dialogViewRef></ng-template>
+    </div>
+  </div>
+</dialog>

@@ -1,0 +1,13 @@
+<div class="form-div" >
+<label for="name">Your Name</label>
+<br>
+<input id="name" type="text" [(ngModel)]="inputNameValue"/>
+<button (click)="pressSubmit()">Submit Form</button>
+<br>
+
+<label for="title">Change Dialog Title</label>
+<br>
+<input id="title" type="text" [(ngModel)]="inputTitleValue"/>
+<button (click)="pressOutPutToDialog()">Output to dialog but do not Close </button>
+
+</div>

@@ -1,0 +1,58 @@
+<div class="form-div" >
+<label for="name">Your Band Data</label>
+<br>
+<h1>{{inputBandData}} </h1>
+
+<button (click)="pressTransform()">Transform Band Data</button>
+</div>
+
+@if (transFormedBandData) {
+<label for="name">Transform Band Data</label>
+<br>
+<h4> Members</h4>
+<span>Current </span>
+
+<ul>
+    @for (member of transFormedBandData.members.current; track $index) {
+        <li>{{ JSobject.values(member)}}</li>
+    }
+</ul>
+<span> Past</span>
+<ul>
+    @for (member of transFormedBandData.members.past; track $index) {
+        <li>{{ JSobject.values(member)}}</li>
+    }
+</ul>
+<span> All </span>
+<ul>
+    @for (member of transFormedBandData.members.all; track $index) {
+        <li>{{ member}}</li>
+    }
+</ul>
+<h4>Plays</h4>
+
+    <span>Bass</span>
+    <ul>
+    @for (player of JSobject.values(transFormedBandData.plays.bass); track $index) {
+        <li>{{player}}</li>
+    }</ul>
+    <span>Guitar</span>
+    <ul>
+    @for (player of JSobject.values(transFormedBandData.plays.guitar); track $index) {
+        <li>{{player}}</li>
+    }
+    </ul>
+    <span>Synth</span>
+    <ul>
+    @for (player of JSobject.values(transFormedBandData.plays.synth); track $index) {
+        <li>{{player}}</li>
+    }
+    </ul>
+    <span>Vocal</span>
+    <ul>
+    @for (player of JSobject.values(transFormedBandData.plays.vocals); track $index) {
+        <li>{{player}}</li>
+    }
+    </ul>
+
+}
