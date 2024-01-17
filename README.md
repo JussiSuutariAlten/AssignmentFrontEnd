@@ -1,27 +1,22 @@
 # AssignmentDialog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+Here is also solution for bandData assignement. TransformBandService handles transformation from BandData to TransformedBandData. ExampleTransFormComponent just displays BandData and TransFormedBandData.
+TS types for assignement are in BandData.types.ts file.
 
-## Development server
+You can test Solution by running ng serve and pressing Open Dialog Band Transform and from dialog pressing Transform Band Data button.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+For dialog Assignement. There is Dynamic dialog component and few example components how to use dialog Component. 
 
-## Code scaffolding
+There are Basic unit tests for dialog Component and dummyTestComponent for unit tests
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+If you have any questions or problems please send me emal in `jussi.suutari@alten.fi`
 
-## Build
+You probably need to run `npm install` to install dependencies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+
+Run `ng build` to build the project.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `ng test` to execute the unit tests. 

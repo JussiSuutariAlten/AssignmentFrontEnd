@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { DialogComponent } from './components/Dialog/dialog.component';
 import { ExampleTextComponent } from './components/example-text/example-text.component';
 import { ExampleFormComponent } from './components/example-form/example-form.component';
-import { ExampleTicTacToeComponent } from './components/example-tic-tac-toe/example-tic-tac-toe.component';
 import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { FormsModule } from '@angular/forms';
     DialogComponent,
     ExampleTextComponent,
     ExampleFormComponent,
-    ExampleTicTacToeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
