@@ -1,6 +1,7 @@
 # AssignmentDialog
 
-Here is also solution for bandData assignement. TransformBandService handles transformation from BandData to TransformedBandData. ExampleTransFormComponent just displays BandData and TransFormedBandData.
+Here is also solution for bandData assignement. 
+TransformBandService handles transformation from BandData to TransformedBandData. ExampleTransFormComponent just displays BandData and TransFormedBandData.
 TS types for assignement are in BandData.types.ts file.
 
 You can test Solution by running ng serve and pressing Open Dialog Band Transform and from dialog pressing Transform Band Data button.
